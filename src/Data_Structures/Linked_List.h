@@ -7,6 +7,7 @@
 
 #include <exception>
 #include <stdexcept>
+#include <string>
 
 template<typename T>
 class Linked_List {
@@ -28,7 +29,7 @@ class Linked_List {
 public:
     Linked_List();
     Linked_List( Linked_List<T> &cpy);
-    Linked_List<T> operator=(Linked_List<T> &cpy);
+    Linked_List<T>& operator=(const Linked_List<T> &cpy);
     ~Linked_List();
     void push_back(T data);
     T pop_back();
@@ -39,12 +40,13 @@ public:
     T get_next();
     int get_size();
     T& at(int index);
+    T& operator[](size_t index);
     void reset_iterator();
 private:
     list_node *head;
     list_node *tail;
     list_node *curr;
-    int size;
+    size_t size;
 
 
 
@@ -64,8 +66,22 @@ int Linked_List<T>::get_size() {
 }
 
 template<typename T>
+T &Linked_List<T>::operator[](size_t index) {
+    if(index >= size) {
+        throw std::invalid_argument("Tried to get element at index" + std::to_string(index) +" with size " + std::to_string(size));
+    }
+    else {
+        auto the_val = this->head;
+        for(int i =0; i < index; i ++) {
+            the_val = the_val->next;
+        }
+        return the_val->data;
+    }
+}
+
+template<typename T>
 T &Linked_List<T>::at(int index) {
-    if(index > size) {
+    if(index >= size) {
         throw std::invalid_argument("Tried to get element at index" + std::to_string(index) + " with size " + std::to_string(size));
     }
     else {
@@ -97,7 +113,7 @@ Linked_List<T>::Linked_List(Linked_List<T> &cpy) {
 }
 
 template<typename T>
-Linked_List<T> Linked_List<T>::operator=(Linked_List<T> &cpy) {
+Linked_List<T>& Linked_List<T>::operator=(const Linked_List<T> &cpy) {
    size = cpy.size;
     if(cpy.head != nullptr) {
 
