@@ -33,6 +33,10 @@ public:
     Linked_List<T>& operator=(const Linked_List<T> &cpy);
     ~Linked_List();
     void push_back(T data);
+
+    list_node * push_back_node(T data);
+    void remove_node(list_node *theNode);
+
     T pop_back();
     void remove(T data);
     T remove_at(int index);
@@ -43,6 +47,9 @@ public:
     T& at(int index);
     T& operator[](size_t index);
     void reset_iterator();
+
+
+
 private:
     list_node *head;
     list_node *tail;
@@ -162,6 +169,24 @@ void Linked_List<T>::push_back(T data) {
 }
 
 template<typename T>
+typename Linked_List<T>::list_node* Linked_List<T>::push_back_node(T data) {
+
+    if(head == nullptr) {
+        head = new list_node(data);
+        tail = head;
+        curr = head;
+    } else {
+        tail->next = new list_node(data);
+        tail->next->prev = tail;
+        tail = tail->next;
+
+    }
+    size++;
+    return tail;
+
+}
+
+template<typename T>
 T Linked_List<T>::pop_back() {
     if( head == tail && head != nullptr) {
         T data = head->data;
@@ -185,6 +210,18 @@ T Linked_List<T>::pop_back() {
         return data;
 
 
+}
+
+template<typename T>
+void Linked_List<T>::remove_node(Linked_List::list_node *theNode) { //TODO Fix this
+    if(theNode->next != nullptr) {
+        theNode->next->prev = theNode->prev;
+    }
+    if(theNode->prev != nullptr) {
+        theNode->prev->next = theNode->next;
+    }
+    delete theNode;
+    size--;
 }
 
 template<typename T>

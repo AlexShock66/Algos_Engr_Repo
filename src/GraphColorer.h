@@ -140,6 +140,7 @@ void GraphColorer::smallest_last_vertex(Adj_List<uint> &adj_list, ostream &out) 
     Linked_List<uint> degrees[adj_list.get_curr_length()];
 
 
+
     for(auto i=0; i < adj_list.get_curr_length(); i ++) {
         degrees[adj_list[i].get_size()].push_back(i);
     }
