@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/graph_coloring.dir/src/graph_coloring.cpp.o  -o graph_coloring 

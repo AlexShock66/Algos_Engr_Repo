@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Data_Structures"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_stats">
+				<Option output="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/graph_stats" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 graph_stats"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_stats/fast">
+				<Option output="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/graph_stats" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 graph_stats/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="playground">
+				<Option output="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/playground" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 playground"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="playground/fast">
+				<Option output="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/playground" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 playground/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_coloring">
+				<Option output="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/graph_coloring" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 graph_coloring"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_coloring/fast">
+				<Option output="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/graph_coloring" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 graph_coloring/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests">
+				<Option output="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests/fast">
+				<Option output="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_generation">
+				<Option output="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/graph_generation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 graph_generation"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_generation/fast">
+				<Option output="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/graph_generation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 graph_generation/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/Alex\ Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/Catch/catch.hpp">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/Catch/catch_config.cpp">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/Data_Structures/Adj_List.h">
+			<Option target="playground"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/Data_Structures/Linked_List.h">
+			<Option target="playground"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/GraphColorer.h">
+			<Option target="graph_coloring"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/GraphGenerator.h">
+			<Option target="graph_stats"/>
+			<Option target="graph_generation"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/Tests/DS_Tests.cpp">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/graph_coloring.cpp">
+			<Option target="graph_coloring"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/graph_generation_runner.cpp">
+			<Option target="graph_generation"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/graph_stats.cpp">
+			<Option target="graph_stats"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/playground.cpp">
+			<Option target="playground"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

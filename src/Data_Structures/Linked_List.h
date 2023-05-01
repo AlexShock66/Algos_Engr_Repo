@@ -11,6 +11,7 @@
 
 template<typename T>
 class Linked_List {
+public:
     struct list_node {
         list_node *prev;
         list_node *next;
@@ -213,7 +214,7 @@ T Linked_List<T>::remove_at(int index) {
         throw std::invalid_argument("Tried to remove_at from an empty list");
     } else if(index >= size) {
         throw std::invalid_argument("Tried to remove_at index " + std::to_string(index) + " from list size " +
-                                            to_string(size) + '\n');
+                                            std::to_string(size) + '\n');
 
     } else if(size == 1 && index == 0) {
         T theData = head->data;

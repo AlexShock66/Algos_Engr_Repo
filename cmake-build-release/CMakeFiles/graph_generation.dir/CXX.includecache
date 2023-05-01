@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/Data_Structures/Adj_List.h
+Linked_List.h
+/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/Data_Structures/Linked_List.h
+iostream
+-
+
+/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/Data_Structures/Linked_List.h
+exception
+-
+stdexcept
+-
+string
+-
+
+/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/GraphGenerator.h
+./Data_Structures/Adj_List.h
+/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/Data_Structures/Adj_List.h
+string
+-
+random
+-
+algorithm
+-
+chrono
+-
+
+/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/graph_generation_runner.cpp
+fstream
+-
+GraphGenerator.h
+/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/GraphGenerator.h
+
