@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/src/Catch/catch_config.cpp.o"
+  "CMakeFiles/tests.dir/src/Catch/catch_config.cpp.o.d"
   "CMakeFiles/tests.dir/src/Tests/DS_Tests.cpp.o"
+  "CMakeFiles/tests.dir/src/Tests/DS_Tests.cpp.o.d"
   "tests"
   "tests.pdb"
 )

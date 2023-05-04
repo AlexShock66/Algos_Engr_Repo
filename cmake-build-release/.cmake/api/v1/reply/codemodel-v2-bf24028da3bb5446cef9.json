@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.3"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Data_Structures",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "graph_coloring::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graph_coloring-Release-18cfc5dff21ff7ba073a.json",
+					"name" : "graph_coloring",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graph_generation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graph_generation-Release-7fda5f5821b1030fbd57.json",
+					"name" : "graph_generation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graph_stats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graph_stats-Release-17fab58e75dd57a8ffa9.json",
+					"name" : "graph_stats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "playground::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-playground-Release-d52f737d15f2913b49dc.json",
+					"name" : "playground",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tests-Release-bd376e4397baf9c68776.json",
+					"name" : "tests",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release",
+		"source" : "/Users/shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

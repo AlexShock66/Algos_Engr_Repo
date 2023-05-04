@@ -1,15 +1,14 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/graph_stats.cpp" "/mnt/c/Users/Alex Shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/cmake-build-release/CMakeFiles/graph_stats.dir/src/graph_stats.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/shockley/Desktop/School/Algo_Engineering/Algos_Engr_Repo/src/graph_stats.cpp" "CMakeFiles/graph_stats.dir/src/graph_stats.cpp.o" "gcc" "CMakeFiles/graph_stats.dir/src/graph_stats.cpp.o.d"
   )
 
 # Targets to which this target links.

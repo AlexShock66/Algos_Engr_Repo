@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/graph_coloring.dir/src/graph_coloring.cpp.o"
+  "CMakeFiles/graph_coloring.dir/src/graph_coloring.cpp.o.d"
   "graph_coloring"
   "graph_coloring.pdb"
 )

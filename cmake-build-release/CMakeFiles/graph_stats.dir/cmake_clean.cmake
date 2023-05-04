@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/graph_stats.dir/src/graph_stats.cpp.o"
+  "CMakeFiles/graph_stats.dir/src/graph_stats.cpp.o.d"
   "graph_stats"
   "graph_stats.pdb"
 )

@@ -37,6 +37,7 @@ public:
     list_node * push_back_node(T data);
     void remove_node(list_node *theNode);
 
+//    void erase(list_node * theNode);
     T pop_back();
     void remove(T data);
     T remove_at(int index);

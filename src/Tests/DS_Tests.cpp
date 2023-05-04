@@ -53,6 +53,19 @@ TEST_CASE("Linked List") {
         auto a = int_list.push_back_node(10);
 
         CHECK(a->data == 10);
+
+        Linked_List<int> theList;
+        theList.push_back_node(0);
+        auto b = theList.push_back_node(1);
+        theList.push_back_node(2);
+        CHECK(theList.get_size() == 3);
+        b->data = 15;
+        CHECK(theList.at(1) == 15);
+        theList.remove_node(b);
+        CHECK(theList.get_size() == 2);
+        CHECK(theList.at(0) == 0);
+        CHECK(theList.at(1) == 2);
+
     }
     SECTION("List Traversal") {
         CHECK(int_list.at(0) == 0);

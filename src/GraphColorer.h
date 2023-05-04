@@ -139,10 +139,13 @@ void GraphColorer::smallest_last_vertex(Adj_List<uint> &adj_list, ostream &out) 
     };
     Linked_List<uint> degrees[adj_list.get_curr_length()];
 
+    uint degree_lookup[adj_list.get_curr_length()];
 
+    Linked_List<uint>::list_node* mapper[adj_list.get_curr_length()];
 
     for(auto i=0; i < adj_list.get_curr_length(); i ++) {
-        degrees[adj_list[i].get_size()].push_back(i);
+        mapper[i] = degrees[adj_list[i].get_size()].push_back_node(i);
+        degree_lookup[i] = adj_list[i].get_size();
     }
 
 
@@ -154,6 +157,14 @@ void GraphColorer::smallest_last_vertex(Adj_List<uint> &adj_list, ostream &out) 
             if(degrees[i].has_next()) cout <<", ";
         }
         cout << endl;
+    }
+
+    vector<uint> ordering;
+    for(int i =0; i < adj_list.get_curr_length(); i ++) {
+        if(degrees[i].has_next()) {
+            auto curr = degrees[i].get_next();
+
+        }
     }
 
 }
