@@ -65,7 +65,23 @@ TEST_CASE("Linked List") {
         CHECK(theList.get_size() == 2);
         CHECK(theList.at(0) == 0);
         CHECK(theList.at(1) == 2);
+        Linked_List<int> newList;
+        auto curr = newList.push_back_node(10);
+        newList.remove_node(curr);
+        CHECK(newList.get_size() == 0);
+        auto empty = Linked_List<int>();
+        empty.reset_iterator();
+        CHECK(!empty.has_next());
 
+    }
+    SECTION("Print List") {
+        auto theList = Linked_List<int>();
+        for(int i=0; i < 10; i ++) {
+            theList.push_back(i);
+        }
+        cout << "Printing List (SHould be 0-9)" <<endl;
+        theList.print();
+        cout << endl;
     }
     SECTION("List Traversal") {
         CHECK(int_list.at(0) == 0);
@@ -92,6 +108,10 @@ TEST_CASE("Linked List") {
             val++;
         }
 
+    }
+
+    for(int i =0; i < 10; i ++) {
+        delete int_ptr_list.at(i);
     }
 }
 

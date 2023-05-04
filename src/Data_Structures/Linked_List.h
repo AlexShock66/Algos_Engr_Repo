@@ -8,6 +8,7 @@
 #include <exception>
 #include <stdexcept>
 #include <string>
+#include <iostream>
 
 template<typename T>
 class Linked_List {
@@ -48,7 +49,8 @@ public:
     T& at(int index);
     T& operator[](size_t index);
     void reset_iterator();
-
+    void print(std::ostream &out=std::cout);
+    T pop_front();
 
 
 private:
@@ -67,6 +69,16 @@ Linked_List<T>::Linked_List() {
     tail = nullptr;
     curr = nullptr;
     size = 0;
+}
+
+template<typename T>
+void Linked_List<T>::print(std::ostream &out) {
+    auto tmp = head;
+    while(tmp!= nullptr){
+        out << tmp->data;
+        if(tmp->next != nullptr) out <<", ";
+        tmp = tmp->next;
+    }
 }
 
 template<typename T>
@@ -214,6 +226,28 @@ T Linked_List<T>::pop_back() {
 }
 
 template<typename T>
+T Linked_List<T>::pop_front() {
+    if( head == tail && head != nullptr) {
+        T data = head->data;
+        delete head;
+        head = nullptr;
+        tail = nullptr;
+        curr = nullptr;
+        size--;
+        return data;
+    }
+    if(size == 0) {
+        throw std::invalid_argument("Tried to pop from an empty list");
+    }
+    T data = head->data;
+    head = head->next;
+    delete head->prev;
+    head->prev = nullptr;
+    size--;
+    return data;
+}
+
+template<typename T>
 void Linked_List<T>::remove_node(Linked_List::list_node *theNode) { //TODO Fix this
     if(theNode->next != nullptr) {
         theNode->next->prev = theNode->prev;
@@ -221,8 +255,17 @@ void Linked_List<T>::remove_node(Linked_List::list_node *theNode) { //TODO Fix t
     if(theNode->prev != nullptr) {
         theNode->prev->next = theNode->next;
     }
+    if(theNode ==head) head = theNode->next;
+    if(theNode == tail) tail = theNode->prev;
     delete theNode;
+
     size--;
+
+    if(size == 0) {
+        head = nullptr;
+        tail = nullptr;
+    }
+    theNode = nullptr;
 }
 
 template<typename T>
@@ -313,7 +356,6 @@ T Linked_List<T>::get_next() {
 template<typename T>
 void Linked_List<T>::reset_iterator() {
     curr = head;
-
 }
 
 #endif //DATA_STRUCTURES_LINKED_LIST_H

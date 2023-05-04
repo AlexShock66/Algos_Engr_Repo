@@ -18,7 +18,7 @@ private:
     static void color_vert(size_t vert_to_color, int *colors, Adj_List<uint> &theList);
     static void random_order_coloring(Adj_List<uint> &adj_list,std::ostream &out);
     static void smallest_last_vertex(Adj_List<uint> &adj_list,std::ostream &out);
-
+    static void print_degree_structure(Adj_List<uint> &adj_list,Linked_List<uint> * degrees);
 
 public:
 
@@ -131,40 +131,112 @@ void GraphColorer::random_order_coloring(Adj_List<uint> &adj_list, ostream &out)
 
 }
 
+void GraphColorer::print_degree_structure(Adj_List<uint> &adj_list, Linked_List<uint> *degrees) {
+    cout << "============== DEGREE STRUCTURE ==============" <<endl;
+    for(int i =0; i < adj_list.get_curr_length(); i ++) {
+        cout << i<<": ";
+        degrees[i].print();
+        cout << endl;
+    }
+}
+
+#define DEBUG
 void GraphColorer::smallest_last_vertex(Adj_List<uint> &adj_list, ostream &out) {
-    struct Vertex{
-        Vertex* ptr_to_degree_list;
-        size_t degree;
-        size_t value;
-    };
+    #ifdef DEBUG
+        cout << "Original List Structure" <<endl;
+        adj_list.prettyPrint(std::cout);
+        cout << endl;
+    #endif
+    auto num_verts = adj_list.get_curr_length();
     Linked_List<uint> degrees[adj_list.get_curr_length()];
 
-    uint degree_lookup[adj_list.get_curr_length()];
+    uint degree_lookup[adj_list.get_curr_length()]; //Degree lookup = what is my current degree for that node
 
-    Linked_List<uint>::list_node* mapper[adj_list.get_curr_length()];
+    Linked_List<uint>::list_node* mapper[adj_list.get_curr_length()]; //mapper serves as a lookup from node -> NodePtr in Degree structure
 
     for(auto i=0; i < adj_list.get_curr_length(); i ++) {
         mapper[i] = degrees[adj_list[i].get_size()].push_back_node(i);
         degree_lookup[i] = adj_list[i].get_size();
     }
-
-
-    cout << "============== DEGREE STRUCTURE ==============" <<endl;
-    for(int i =0; i < adj_list.get_curr_length(); i ++) {
-        cout << i<<": ";
-        while(degrees[i].has_next()) {
-            cout << degrees[i].get_next();
-            if(degrees[i].has_next()) cout <<", ";
+    #ifdef DEBUG
+        cout << "================= MAPPER STRUCTURE =================" <<endl;
+        for(auto i=0; i < adj_list.get_curr_length(); i ++){
+            cout << i << " -> " << mapper[i]->data <<endl;
         }
-        cout << endl;
-    }
 
-    vector<uint> ordering;
+        print_degree_structure(adj_list,degrees);
+
+        cout << "================================================" <<endl;
+    #endif
+    bool clique_found = false;
+    uint terminal_clique_size =2;
+    uint ordering[adj_list.get_curr_length()];
+    uint current_iteration = 0;
+    uint largest_degree_when_deleted = 0;
     for(int i =0; i < adj_list.get_curr_length(); i ++) {
+        if(degrees[i].get_size() == i + 1 && !clique_found){
+            #ifdef DEBUG
+                cout << "\nFound Terminal Clique of size: " <<num_verts <<endl;
+            #endif
+            clique_found = true;
+            terminal_clique_size = i + 1;
+        }
         if(degrees[i].has_next()) {
             auto curr = degrees[i].get_next();
+            degrees[i].pop_front();
+            degrees[i].reset_iterator();
+            mapper[curr] = nullptr;
+            //curr is the node with the lowest degree
+            if(largest_degree_when_deleted < degree_lookup[curr]) largest_degree_when_deleted = degree_lookup[curr];
+            #ifdef DEBUG
+                cout << "Removing: " <<curr <<" With Degree: " << degree_lookup[curr]<<endl;
+            #endif
+            ordering[current_iteration] = curr;
+            current_iteration++;
+            //Now we must iterate through the adj nodes to curr and lower the degree by 1 and
+            while(adj_list[curr].has_next()){
+                auto adj_node = adj_list[curr].get_next();
+                auto node_ptr = mapper[adj_node];
+                if(node_ptr == nullptr) continue;
+                auto degree_of_adj = degree_lookup[adj_node];
+                degrees[degree_of_adj].remove_node(node_ptr); //TODO THIS LINE BREAKS BECAUSE OF POINTERS BEING RESET (PREV IS RESETTING TO DELETED ONE)
+                mapper[adj_node] = degrees[degree_of_adj -1 ].push_back_node(adj_node);
+                degree_lookup[adj_node] -=1;
+                degrees[degree_of_adj].reset_iterator();
+            }
+            adj_list[curr].reset_iterator();
+            degrees[i].reset_iterator();
+
+//            degrees[degree_lookup[curr]].remove_node(mapper[curr]);
+//            degrees[i].reset_iterator();
+//            auto node_ptr = mapper[curr];
+//            auto degree_of_adj = degree_lookup[curr];
+//            degrees[degree_of_adj].remove_node(node_ptr);
+            i -= 2;
+            if(i <-1) i = -1;
+            num_verts-=1;
+            print_degree_structure(adj_list,degrees);
 
         }
+
+    }
+
+    int colors[adj_list.get_curr_length()];
+    memset(colors, -1, sizeof(colors[0]) * adj_list.get_curr_length());
+    for(int i=0;i <current_iteration; i ++) {
+
+        color_vert(ordering[i],colors,adj_list);
+    }
+
+    #ifdef DEBUG
+        cout << "Largest Degree When Deleted: " << largest_degree_when_deleted <<endl;
+        cout << "Terminal Clique Size: " << terminal_clique_size << endl;
+    #endif
+    for(int i=0; i < adj_list.get_curr_length(); i ++) {
+        #ifdef DEBUG
+        cout << "Vert " <<i <<" -> Color " <<colors[i] <<endl;
+        #endif
+        out << i <<"," <<colors[i] <<endl;
     }
 
 }
