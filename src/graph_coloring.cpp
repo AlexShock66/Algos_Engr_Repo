@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     theList.push_value(3,2);
     theList.push_value(3,1);
 
-//    theList = GraphGenerator::generate_cycle(4);
+    theList = GraphGenerator::generate_distro("uniform");
     GraphColorer::color_graph("SLV",theList);
 
 //    out.open("../graph_files/coloring_test.txt");

@@ -141,6 +141,18 @@ void GraphColorer::print_degree_structure(Adj_List<uint> &adj_list, Linked_List<
 }
 
 #define DEBUG
+/*
+ * Generates a file with the following format:
+ *      Largest Degree when deleted
+ *      Terminal Clique Size
+ *      Ordering time
+ *      Coloring time
+ *
+ *      <Vert 1>,<Color of Vert 1>
+ *      <Vert 2>,<Color of Vert 2>
+ *      ...
+ *      <Vert n>,<Color of Vert n>
+ */
 void GraphColorer::smallest_last_vertex(Adj_List<uint> &adj_list, ostream &out) {
     #ifdef DEBUG
         cout << "Original List Structure" <<endl;
@@ -232,6 +244,8 @@ void GraphColorer::smallest_last_vertex(Adj_List<uint> &adj_list, ostream &out) 
         cout << "Largest Degree When Deleted: " << largest_degree_when_deleted <<endl;
         cout << "Terminal Clique Size: " << terminal_clique_size << endl;
     #endif
+    out << largest_degree_when_deleted <<endl;
+    out << terminal_clique_size << endl;
     for(int i=0; i < adj_list.get_curr_length(); i ++) {
         #ifdef DEBUG
         cout << "Vert " <<i <<" -> Color " <<colors[i] <<endl;
