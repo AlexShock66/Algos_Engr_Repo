@@ -254,7 +254,7 @@ Adj_List<uint> GraphGenerator::_make_linear_removal(size_t num_verts, size_t num
 
 
 Adj_List<uint> GraphGenerator::_make_triangular_removal(size_t num_verts, size_t num_edges) {
-    //TODO Make sure that the removal probability is the inverse of the place probability
+
     uint adj_matrix[num_verts][num_verts];
     memset(adj_matrix, 0, sizeof(adj_matrix[0][0]) * num_verts * num_verts);
 
@@ -350,6 +350,7 @@ void GraphGenerator::generate_stats(std::ofstream &out, std::string distro, size
     out <<"\n";
     auto row_title_idx = int(int((end_verts - start_verts)/vert_increment)/2.0);
     int counter = 0;
+
     for(size_t verts=start_verts; verts <= end_verts; verts += vert_increment) {
         if(counter == row_title_idx) out << "Verts,";
         else out <<",";
@@ -372,6 +373,33 @@ void GraphGenerator::generate_stats(std::ofstream &out, std::string distro, size
         }
         out << "\n";
 
+    }
+
+
+    out << "\n\n\n\n\n\n";
+
+
+    auto outputter_verts = end_verts/2 + start_verts;
+    auto outputter_edges = (outputter_verts * (outputter_verts -1) / 4);
+
+    outputter_edges = outputter_edges + outputter_edges/2;
+
+    Adj_List<uint> theList;
+    if(distro == "cycle") {
+        theList = GraphGenerator::generate_cycle(outputter_verts);
+    } else if(distro == "complete") {
+        theList = GraphGenerator::generate_complete(outputter_verts);
+    } else {
+        theList = GraphGenerator::generate_distro(distro,outputter_verts,outputter_edges);
+    }
+    out << "Edges Per Vert\n";
+    out << "Algorithm:," << distro <<"\n";
+    out << "Verts:," << outputter_verts<<"\n";
+    if(distro != "cycle" && distro != "complete") out << "Edges:," << outputter_edges<<"\n";
+    else out <<"Edges:," << "N/A" <<"\n";
+
+    for(auto i=0; i < theList.get_curr_length(); i ++) {
+        out << i <<"," <<theList[i].get_size() <<"\n";
     }
 }
 
